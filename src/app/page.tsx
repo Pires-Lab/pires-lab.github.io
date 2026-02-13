@@ -65,59 +65,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Latest Publications Section */}
-      <section className="py-16 bg-white">
-        <div className="container-custom text-purdue-black">
-          <div className="flex justify-between items-center mb-10">
-            <h2 className="text-3xl font-bold">Latest Publications</h2>
-          </div>
-
-          <div className="space-y-6">
-            {slicedPubData.map((publication) => (
-              <div
-                key={publication.id}
-                className="bg-white p-6 rounded-lg shadow-lg border-2 border-gray-300 hover:shadow-xl hover:border-purdue-field transition-all duration-300"
-              >
-                <h3 className="text-xl font-bold mb-2 font-heading">
-                  {publication.title}
-                </h3>
-                <p className="text-purdue-secondary-gray2 mb-2 font-body">
-                  {publication.authors}
-                </p>
-                <div className="flex flex-wrap gap-x-6 text-sm">
-                  <span className="font-body">{publication.journal}</span>
-                  <span className="font-body">{publication.year}</span>
-                  {publication.doi ? (
-                    <a
-                      href={`https://doi.org/${publication.doi}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purdue-field hover:underline font-body"
-                    >
-                      DOI: {publication.doi}
-                    </a>
-                  ) : (
-                    <a
-                      href={publication.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purdue-field hover:underline font-body"
-                    >
-                      DOI coming soon - Click to view paper
-                    </a>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-8 text-center">
-            <Link href="/research#publications" className="btn-secondary">
-              View More Publications
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Recent News/Blog Posts Section */}
       <section className="py-16">
