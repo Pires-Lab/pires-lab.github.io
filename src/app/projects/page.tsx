@@ -4,7 +4,7 @@ import { projects } from "./data";
 
 export const metadata = {
     title: "Projects - Pires Lab",
-    description: "Research projects and publications from the Pires Lab at Purdue University.",
+    description: "Research projects and publications from the Pires Lab at North Dakota State University.",
 };
 
 export default function Projects() {
