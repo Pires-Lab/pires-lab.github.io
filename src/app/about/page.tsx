@@ -3,8 +3,8 @@ import Image from "next/image";
 import FacilityCarousel from "@/app/components/FacilityCarousel";
 
 export const metadata = {
-  title: "Ciampitti Lab - About",
-  description: "Mission, research focus and facilities of the Ciampitti Lab.",
+  title: "Pires Lab - About",
+  description: "Mission, research focus and facilities of the Pires Lab.",
 };
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
         <div className="mb-16 text-center">
           <h1 className="text-4xl font-bold mb-4">About Our Lab</h1>
           <p className="text-lg text-purdue-secondary-gray4 max-w-3xl mx-auto">
-            The Ciampitti Lab focuses on digital agriculture research, combining
+            The Pires Lab focuses on digital agriculture research, combining
             computer vision, data analysis, and traditional crop management
             systems to advance sustainable agriculture.
           </p>
@@ -26,7 +26,7 @@ export default function About() {
           <div>
             <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
             <p className="text-purdue-secondary-gray4 text-md mb-4">
-              At the Ciampitti Lab, our mission is to develop innovative digital
+              At the Pires Lab, our mission is to develop innovative digital
               agriculture solutions that enable more efficient, sustainable, and
               productive farming practices. We leverage cutting-edge
               technologies in computer vision, machine learning, and data

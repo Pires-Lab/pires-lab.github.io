@@ -3,9 +3,9 @@ import { pubData } from "@/lib/info_helper.server";
 import PaginatedPublications from "@/app/components/PaginatedPublications";
 
 export const metadata = {
-  title: "Ciampitti Lab - Publications",
+  title: "Pires Lab - Publications",
   description:
-    "Latest research publications from the Ciampitti Lab at Purdue University.",
+    "Latest research publications from the Pires Lab at Purdue University.",
 };
 
 export default function Research() {

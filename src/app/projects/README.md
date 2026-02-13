@@ -1,6 +1,6 @@
 # Projects System
 
-This directory contains the academic-style project pages system for the Ciampitti Lab website.
+This directory contains the academic-style project pages system for the Pires Lab website.
 
 ## Structure
 

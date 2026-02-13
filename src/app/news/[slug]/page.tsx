@@ -37,13 +37,13 @@ export async function generateMetadata(props: BlogPostPageProps) {
 
   if (!post) {
     return {
-      title: "Post Not Found - Ciampitti Lab",
+      title: "Post Not Found - Pires Lab",
       description: "The requested blog post could not be found.",
     };
   }
 
   return {
-    title: `${post.title} - Ciampitti Lab`,
+    title: `${post.title} - Pires Lab`,
     description: post.excerpt,
   };
 }

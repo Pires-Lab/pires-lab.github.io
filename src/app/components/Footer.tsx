@@ -13,7 +13,7 @@ export default function Footer() {
               Our Location
             </h3>
             <div className="not-italic">
-              <p>Ciampitti Lab</p>
+              <p>Pires Lab</p>
               <p>Department of Agronomy</p>
               <p>Purdue University</p>
               <p>West Lafayette, IN 47907</p>
@@ -159,7 +159,7 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-gray-700 pt-6 text-center">
           <p>
-            &copy; {new Date().getFullYear()} Ciampitti Lab, Purdue University.
+            &copy; {new Date().getFullYear()} Pires Lab, Purdue University.
             All rights reserved.
           </p>
           <div className="flex justify-center items-center space-x-2 mt-2">

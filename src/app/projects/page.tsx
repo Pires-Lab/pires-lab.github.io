@@ -3,8 +3,8 @@ import Image from "next/image";
 import { projects } from "./data";
 
 export const metadata = {
-    title: "Projects - Ciampitti Lab",
-    description: "Research projects and publications from the Ciampitti Lab at Purdue University.",
+    title: "Projects - Pires Lab",
+    description: "Research projects and publications from the Pires Lab at Purdue University.",
 };
 
 export default function Projects() {

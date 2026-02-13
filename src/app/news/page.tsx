@@ -3,9 +3,9 @@ import Image from "next/image";
 import { newsData } from "@/lib/info_helper.server";
 
 export const metadata = {
-  title: "Ciampitti Lab - News",
+  title: "Pires Lab - News",
   description:
-    "Latest updates, blog posts and events from the Ciampitti Lab at Purdue University.",
+    "Latest updates, blog posts and events from the Pires Lab at Purdue University.",
 };
 
 export default function News() {
@@ -16,7 +16,7 @@ export default function News() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4">News & Blog</h1>
           <p className="text-lg text-purdue-secondary-gray4">
-            Latest updates, research findings, and events from the Ciampitti Lab
+            Latest updates, research findings, and events from the Pires Lab
           </p>
         </div>
 

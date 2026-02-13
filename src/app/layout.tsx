@@ -21,9 +21,9 @@ const lora = Lora({
 /* ---------- site-wide <head> metadata ---------- */
 export const metadata: Metadata = {
   metadataBase: new URL("https://ciampitti-lab.github.io"),
-  title: "Ciampitti Lab - Digital Agriculture Research",
+  title: "Pires Lab",
   description:
-    "Advancing agricultural science through computer vision, data analysis and crop-systems research.",
+    "Seeking answers. Developing solutions. | Soil Health • Cover Crops • Applied Research",
 
   /* ---- FAVICON: stable URL, no hash ---- */
   icons: {
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://ciampitti-lab.github.io/",
-    siteName: "Ciampitti Lab",
-    title: "Ciampitti Lab - Digital Agriculture & Farming Systems Research",
+    siteName: "Pires Lab",
+    title: "Pires Lab",
     description:
-      "Advancing agricultural science through computer vision, data analysis and crop-systems research.",
+      "Seeking answers. Developing solutions. | Soil Health • Cover Crops • Applied Research",
     images: [
       {
         url: "/lab-logo.png",
         width: 512,
         height: 512,
-        alt: "Ciampitti Lab logo",
+        alt: "Pires Lab logo",
       },
     ],
   },
@@ -80,7 +80,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               url: "https://ciampitti-lab.github.io/",
-              name: "Ciampitti Lab",
+              name: "Pires Lab",
               alternateName: "Ciampitti-Lab",
               logo: "https://ciampitti-lab.github.io/favicon.png",
             }),

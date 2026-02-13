@@ -2,7 +2,7 @@ import { teamData } from "@/lib/info_helper.server";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Ciampitti Lab - Team",
+  title: "Pires Lab - Team",
   description:
     "Meet the researchers, students and staff behind our digital agriculture projects.",
 };
@@ -17,7 +17,7 @@ export default function Students() {
           <p className="text-lg text-purdue-secondary-gray4 max-w-3xl mx-auto">
             Meet the researchers, scientists, and students working together to
             advance digital agriculture and crop management systems at the
-            Ciampitti Lab.
+            Pires Lab.
           </p>
         </div>
 

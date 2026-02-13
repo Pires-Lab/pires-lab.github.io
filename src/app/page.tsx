@@ -4,7 +4,7 @@ import Image from "next/image";
 import { newsData, pubData } from "@/lib/info_helper.server";
 
 export const metadata = {
-  title: "Ciampitti Lab - Home",
+  title: "Pires Lab - Home",
   description:
     "Digital agriculture research at Purdue University: computer vision, data analysis and crop systems.",
 };
@@ -20,22 +20,23 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-1">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                Ciampitti Lab
+                Pires Lab
               </h1>
-              <h2 className="text-3xl md:text-4xl ">
+              <h2 className="text-3xl md:text-4xl">
+                 <span className="text-purdue-field font-bold">
+                  Soil Health
+                </span>{" "}
+                 and{" "}
                 <span className="text-purdue-field font-bold">
-                  Digital Agriculture{" "}
-                </span>
-                and
-                <span className="text-purdue-field font-bold">
+                   Cover Crops
                   {" "}
-                  Farming Systems{" "}
                 </span>
                 Research
               </h2>
               <p className="pt-6 text-lg md:text-xl opacity-90">
-                Advancing agricultural science through computer vision, data
-                analysis, crop management systems, and sustainable practices.
+                Advancing agricultural sustainability through research on soil health,
+                cover crops, nutrient cycling, and resilient cropping systems in the
+                Northern Great Plains and beyond.
               </p>
               <div className="pt-4 flex flex-wrap gap-4">
                 <Link href="/research" className="btn-primary">
