@@ -1,82 +1,25 @@
-import Link from "next/link";
-import Image from "next/image";
-import { newsData } from "@/lib/info_helper.server";
-
 export const metadata = {
   title: "Pires Lab - News",
-  description:
-    "Latest updates, blog posts and events from the Pires Lab at North Dakota State University.",
+  description: "News and updates from the Pires Lab.",
 };
 
-export default function News() {
+export default function NewsPage() {
   return (
     <div className="py-16">
       <div className="container-custom">
-        {/* Page Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-4">News & Blog</h1>
-          <p className="text-lg text-purdue-secondary-gray4">
-            Latest updates, research findings, and events from the Pires Lab
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl font-bold mb-4 text-white">News</h1>
+          <p className="text-lg text-white/95 max-w-3xl mx-auto">
+            Updates and news from the Pires Lab will be posted here.
           </p>
         </div>
 
-        {/* Categories */}
-        {
-          // <div className="flex flex-wrap gap-2 mb-8 font-heading text-purdue-secondary-gray2">
-          //   <button className="px-4 py-2 rounded-full bg-purdue-black text-white text-sm font-medium">
-          //     All
-          //   </button>
-          //   <button className="px-4 py-2 rounded-full bg-gray-100 text-gray-800 text-sm font-medium hover:bg-gray-200">
-          //     Research
-          //   </button>
-          //   <button className="px-4 py-2 rounded-full bg-gray-100 text-gray-800 text-sm font-medium hover:bg-gray-200">
-          //     Data Analysis
-          //   </button>
-          //   <button className="px-4 py-2 rounded-full bg-gray-100 text-gray-800 text-sm font-medium hover:bg-gray-200">
-          //     Computer Vision
-          //   </button>
-          //   <button className="px-4 py-2 rounded-full bg-gray-100 text-gray-800 text-sm font-medium hover:bg-gray-200">
-          //     Events
-          //   </button>
-          // </div>
-        }
-        {/* Blog Posts */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-purdue-black">
-          {newsData.map((post) => (
-            <div
-              key={post.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition-all hover:shadow-lg"
-            >
-              <div className="h-48 bg-purdue-secondary-gray2 relative">
-                <Image
-                  src={`/blog/img/${post.img_file_name}`}
-                  alt={post.title}
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover bg-purdue-black"
-                  loading="lazy"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="bg-purdue-gold px-2 py-1 text-xs font-bold text-purdue-black rounded font-heading">
-                    {post.category}
-                  </span>
-                </div>
-              </div>
-              <div className="p-6">
-                <span className="text-sm text-gray-500">{post.date}</span>
-                <h3 className="text-xl font-bold mt-1 mb-2">{post.title}</h3>
-                <p className="text-purdue-secondary-gray2 mb-4">
-                  {post.excerpt}
-                </p>
-                <Link
-                  href={`/news/${post.slug}`}
-                  className="text-purdue-rush hover:underline font-medium font-heading text-bold"
-                >
-                  Read More
-                </Link>
-              </div>
-            </div>
-          ))}
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-purdue-black max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold mb-3">News coming soon</h2>
+          <p className="text-gray-700 leading-relaxed">
+            We are currently updating this section. Please check back soon for
+            announcements, lab updates, and research highlights.
+          </p>
         </div>
       </div>
     </div>
