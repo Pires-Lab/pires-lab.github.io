@@ -14,7 +14,7 @@ export default function NewsPage() {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-purdue-black max-w-3xl mx-auto">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-lab-deep max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold mb-3">News coming soon</h2>
           <p className="text-gray-700 leading-relaxed">
             We are currently updating this section. Please check back soon for

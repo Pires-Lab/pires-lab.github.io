@@ -25,7 +25,7 @@ export default function Projects() {
         </div>
 
         {projects.length === 0 ? (
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-purdue-black">
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-lab-deep">
             <h2 className="text-2xl font-bold mb-3">Projects coming soon</h2>
             <p className="text-gray-700 leading-relaxed">
               We are currently updating this page with research projects from the
@@ -33,7 +33,7 @@ export default function Projects() {
             </p>
           </div>
         ) : (
-          <div className="grid lg:grid-cols-2 gap-8 text-purdue-black">
+          <div className="grid lg:grid-cols-2 gap-8 text-lab-deep">
             {projects.map((project) => (
               <div
                 key={project.slug}
@@ -51,7 +51,7 @@ export default function Projects() {
                     />
                   )}
                   <div className="absolute top-3 left-3">
-                    <span className="bg-purdue-gold px-2 py-1 text-xs font-bold text-purdue-black rounded font-heading">
+                    <span className="bg-ndsu-gold px-2 py-1 text-xs font-bold text-lab-deep rounded font-heading">
                       {project.venue.short}
                     </span>
                   </div>
@@ -90,7 +90,7 @@ export default function Projects() {
                   <div className="pt-2 border-t border-gray-100">
                     <Link
                       href={`/projects/${project.slug}`}
-                      className="inline-flex items-center text-purdue-rush hover:text-purdue-rush/80 font-medium text-sm transition-colors"
+                      className="inline-flex items-center text-ndsu-sage hover:text-ndsu-sage/80 font-medium text-sm transition-colors"
                     >
                       View Project
                       <svg

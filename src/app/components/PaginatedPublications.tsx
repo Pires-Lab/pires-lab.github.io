@@ -70,10 +70,10 @@ export default function PaginatedPublications({
         {currentPublications.map((publication) => (
           <div
             key={publication.id}
-            className="bg-white p-6 rounded-lg text-purdue-black shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+            className="bg-white p-6 rounded-lg text-lab-deep shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
           >
             <h3 className="text-lg font-bold mb-2">{publication.title}</h3>
-            <p className="text-purdue-secondary-gray2 mb-2">
+            <p className="text-lab-muted mb-2">
               {publication.authors}
             </p>
             <div className="flex flex-wrap gap-x-6 text-sm">
@@ -84,9 +84,9 @@ export default function PaginatedPublications({
                   href={`https://doi.org/${publication.doi}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purdue-gold hover:underline"
+                  className="text-ndsu-gold hover:underline"
                 >
-                  <span className="text-purdue-rush">
+                  <span className="text-ndsu-sage">
                     DOI: {publication.doi}
                   </span>
                 </a>
@@ -95,9 +95,9 @@ export default function PaginatedPublications({
                   href={publication.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purdue-gold hover:underline"
+                  className="text-ndsu-gold hover:underline"
                 >
-                  <span className="text-purdue-rush">
+                  <span className="text-ndsu-sage">
                     DOI coming soon - Click to view paper
                   </span>
                 </a>
@@ -113,7 +113,7 @@ export default function PaginatedPublications({
             <button
               onClick={() => handlePageChange(currentPage - 1)}
               disabled={currentPage === 1}
-              className="px-3 py-1.5 md:px-4 md:py-2 text-sm md:text-base rounded-md md:rounded-lg bg-white text-purdue-black font-heading font-semibold shadow-sm disabled:opacity-40 disabled:cursor-not-allowed hover:bg-purdue-gold transition-colors duration-200 border border-white"
+              className="px-3 py-1.5 md:px-4 md:py-2 text-sm md:text-base rounded-md md:rounded-lg bg-white text-lab-deep font-heading font-semibold shadow-sm disabled:opacity-40 disabled:cursor-not-allowed hover:bg-ndsu-gold transition-colors duration-200 border border-white"
             >
               Previous
             </button>
@@ -126,10 +126,10 @@ export default function PaginatedPublications({
                   disabled={page === "..."}
                   className={`min-w-[36px] md:min-w-[40px] px-2.5 py-1.5 md:px-3 md:py-2 text-sm md:text-base rounded-md md:rounded-lg font-heading font-semibold transition-colors duration-200 ${
                     page === currentPage
-                      ? "bg-purdue-rush text-white shadow-md border border-purdue-rush"
+                      ? "bg-ndsu-sage text-white shadow-md border border-ndsu-sage"
                       : page === "..."
                       ? "bg-transparent text-white cursor-default border border-transparent"
-                      : "bg-white text-purdue-black shadow-sm hover:bg-purdue-gold border border-white"
+                      : "bg-white text-lab-deep shadow-sm hover:bg-ndsu-gold border border-white"
                   }`}
                 >
                   {page}
@@ -140,7 +140,7 @@ export default function PaginatedPublications({
             <button
               onClick={() => handlePageChange(currentPage + 1)}
               disabled={currentPage === totalPages}
-              className="px-3 py-1.5 md:px-4 md:py-2 text-sm md:text-base rounded-md md:rounded-lg bg-white text-purdue-black font-heading font-semibold shadow-sm disabled:opacity-40 disabled:cursor-not-allowed hover:bg-purdue-gold transition-colors duration-200 border border-white"
+              className="px-3 py-1.5 md:px-4 md:py-2 text-sm md:text-base rounded-md md:rounded-lg bg-white text-lab-deep font-heading font-semibold shadow-sm disabled:opacity-40 disabled:cursor-not-allowed hover:bg-ndsu-gold transition-colors duration-200 border border-white"
             >
               Next
             </button>

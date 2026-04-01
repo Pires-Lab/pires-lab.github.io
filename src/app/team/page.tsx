@@ -23,7 +23,7 @@ const alumniTeam = teamData.filter((member) => {
       key={member.id}
       className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition-transform hover:-translate-y-1 flex flex-col h-full"
     >
-      <div className="relative w-full aspect-square sm:aspect-[4/5] lg:h-81 bg-purdue-secondary-gray2">
+      <div className="relative w-full aspect-square sm:aspect-[4/5] lg:h-81 bg-lab-muted">
         <Image
           src={`/pfp/${member.pfp_file_name}`}
           alt={member.name}
@@ -38,8 +38,8 @@ const alumniTeam = teamData.filter((member) => {
         <div className="flex-grow">
           <h3 className="text-xl font-bold mb-1">{member.name}</h3>
 
-          <p className="text-purdue-rush font-semibold mb-3">
-            {member.role}
+          <p className="text-lab-sage font-semibold mb-3">
+           {member.role}
           </p>
 
           <p className="text-gray-700 leading-relaxed">
@@ -49,10 +49,10 @@ const alumniTeam = teamData.filter((member) => {
 
         {member.linkedin && (
           <a
-            href={member.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-purdue-rush hover:underline font-heading font-bold mt-auto pt-4"
+          href={member.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center text-lab-sage hover:text-ndsu-gold hover:underline font-heading font-bold mt-auto pt-4 transition-colors"
           >
             <svg
               className="w-4 h-4 mr-2"
@@ -81,7 +81,7 @@ const alumniTeam = teamData.filter((member) => {
         {/* Current Team */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold mb-8 text-white">Current Team</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-purdue-black">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-lab-deep">
             {currentTeam.map((member) => renderMemberCard(member))}
           </div>
         </div>
@@ -90,7 +90,7 @@ const alumniTeam = teamData.filter((member) => {
         {alumniTeam.length > 0 && (
           <div className="mb-20">
             <h2 className="text-3xl font-bold mb-8 text-white">Alumni</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-purdue-black">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-lab-deep">
               {alumniTeam.map((member) => renderMemberCard(member))}
             </div>
           </div>

@@ -71,7 +71,7 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
           display: flex !important;
           align-items: flex-start !important;
           margin: 0.5rem 0 !important;
-          color: var(--purdue-secondary-gray3);
+          color: var(--lab-soft);
         }
         
         .task-list-item > input[type="checkbox"] {
@@ -260,7 +260,7 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
                                         src={videoSrc}
                                         controls={controls}
                                         poster={poster}
-                                        className="rounded-md w-full h-auto border-2 border-purdue-gold"
+                                        className="rounded-md w-full h-auto border-2 border-ndsu-gold"
                                         style={{
                                             width: videoWidth,
                                             height: videoHeight,
@@ -296,13 +296,13 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
 
                         return <div className="my-4 text-[#e0e0e0]" {...props}>{children}</div>;
                     },
-                    a: (p) => <a className="text-purdue-rush hover:underline" {...p} />,
+                    a: (p) => <a className="text-ndsu-sage hover:underline" {...p} />,
                     ul: (p) => <ul className="list-disc pl-6 my-4 text-[#e0e0e0]" {...p} />,
                     ol: (p) => <ol className="list-decimal pl-6 my-4 text-[#e0e0e0]" {...p} />,
                     li: (p) => <li className="my-2 text-[#e0e0e0]" {...p} />,
                     blockquote: (p) => (
                         <blockquote
-                            className="border-l-4 border-purdue-gold pl-4 italic my-6"
+                            className="border-l-4 border-ndsu-gold pl-4 italic my-6"
                             {...p}
                         />
                     ),
@@ -346,13 +346,13 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
                             }[language.toLowerCase()] || language;
 
                             return (
-                                <div className="relative my-6 overflow-hidden rounded-md border-2 border-purdue-gold">
+                                <div className="relative my-6 overflow-hidden rounded-md border-2 border-ndsu-gold">
                                     {/* Header with language name and copy button */}
-                                    <div className="flex items-center justify-between bg-purdue-black px-4 py-2 border-b border-purdue-gold">
-                                        <div className="text-xs font-mono text-purdue-gold">{displayLanguage}</div>
+                                    <div className="flex items-center justify-between bg-lab-deep px-4 py-2 border-b border-ndsu-gold">
+                                        <div className="text-xs font-mono text-ndsu-gold">{displayLanguage}</div>
                                         <button
                                             onClick={() => copyToClipboard(code)}
-                                            className="bg-purdue-black hover:bg-purdue-secondary-gray2 transition-colors text-purdue-gold hover:text-white rounded px-2 py-1 text-xs font-heading flex items-center"
+                                            className="bg-lab-deep hover:bg-lab-muted transition-colors text-ndsu-gold hover:text-white rounded px-2 py-1 text-xs font-heading flex items-center"
                                             aria-label="Copy code"
                                             title="Copy code"
                                         >
@@ -380,7 +380,7 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
                                         language={language}
                                         style={oneDark}
                                         customStyle={{
-                                            backgroundColor: "#000000", // purdue-black
+                                            backgroundColor: "#000000", // lab-deep
                                             background: "#000000",
                                             padding: "1rem",
                                             margin: 0,
@@ -404,7 +404,7 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
                         // Otherwise it's an inline code element
                         return (
                             <code
-                                className={`bg-gray-800 px-1 py-1 rounded text-purdue-field font-mono text-sm ${className || ''}`}
+                                className={`bg-gray-800 px-1 py-1 rounded text-ndsu-field font-mono text-sm ${className || ''}`}
                                 {...props}
                             >
                                 {children}
@@ -418,9 +418,9 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
                             <table className="min-w-full border-collapse" {...p} />
                         </div>
                     ),
-                    thead: (p) => <thead className="bg-purdue-black text-left" {...p} />,
-                    th: (p) => <th className="px-4 py-2 border border-purdue-gold text-purdue-gold font-bold" {...p} />,
-                    td: (p) => <td className="px-4 py-2 border border-gray-300 text-purdue-secondary-gray3" {...p} />,
+                    thead: (p) => <thead className="bg-lab-deep text-left" {...p} />,
+                    th: (p) => <th className="px-4 py-2 border border-ndsu-gold text-ndsu-gold font-bold" {...p} />,
+                    td: (p) => <td className="px-4 py-2 border border-gray-300 text-lab-soft" {...p} />,
                 }}
             >
                 {content}

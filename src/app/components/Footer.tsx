@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#042117]/75 backdrop-blur-md text-white py-8 border-t border-purdue-gold/20">
+    <footer className="bg-[#042117]/75 backdrop-blur-md text-white py-8 border-t border-ndsu-gold/20">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Lab Information */}
           <div>
-            <h3 className="text-purdue-gold font-bold text-xl mb-4">
+            <h3 className="text-ndsu-gold font-bold text-xl mb-4">
               Our Location
             </h3>
             <div className="not-italic space-y-1 text-white/95">
@@ -22,14 +22,14 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-purdue-gold font-bold text-xl mb-4">
+            <h3 className="text-ndsu-gold font-bold text-xl mb-4">
               Quick Links
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/"
-                  className="hover:text-purdue-gold transition-colors"
+                  className="hover:text-ndsu-gold transition-colors"
                 >
                   Home
                 </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/research"
-                  className="hover:text-purdue-gold transition-colors"
+                  className="hover:text-ndsu-gold transition-colors"
                 >
                   Research
                 </Link>
@@ -45,7 +45,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/projects"
-                  className="hover:text-purdue-gold transition-colors"
+                  className="hover:text-ndsu-gold transition-colors"
                 >
                   Projects
                 </Link>
@@ -53,7 +53,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/team"
-                  className="hover:text-purdue-gold transition-colors"
+                  className="hover:text-ndsu-gold transition-colors"
                 >
                   Team
                 </Link>
@@ -61,7 +61,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="hover:text-purdue-gold transition-colors"
+                  className="hover:text-ndsu-gold transition-colors"
                 >
                   About
                 </Link>
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* Contact / Social */}
           <div>
-            <h3 className="text-purdue-gold font-bold text-xl mb-4">
+            <h3 className="text-ndsu-gold font-bold text-xl mb-4">
               Connect With Us
             </h3>
             <p className="text-white/95 mb-4">

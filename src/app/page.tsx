@@ -73,44 +73,45 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 text-purdue-black">
-            <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6">
+
+          <div className="grid md:grid-cols-3 gap-8 text-lab-deep">
+            <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6 flex flex-col h-full">
               <h3 className="text-xl font-bold mb-3">Research</h3>
-              <p className="text-gray-700 mb-4">
-                Learn more about our work on soil processes, cover crops,
+              <p className="text-gray-700 leading-relaxed">
+                Learn more about our work on soil processes, cover crops, 
                 nutrient cycling, and sustainable cropping systems.
               </p>
               <Link
                 href="/research"
-                className="text-purdue-rush font-medium hover:underline"
+                className="mt-auto pt-4 text-lab-sage hover:text-ndsu-gold font-medium transition-colors"
               >
                 Explore Research
               </Link>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6">
+            <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6 flex flex-col h-full">
               <h3 className="text-xl font-bold mb-3">Projects</h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 leading-relaxed">
                 See current and past research projects, collaborations, and
                 scientific outputs from the lab.
               </p>
               <Link
                 href="/projects"
-                className="text-purdue-rush font-medium hover:underline"
+                className="mt-auto pt-4 text-lab-sage hover:text-ndsu-gold font-medium transition-colors"
               >
                 View Projects
               </Link>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6">
+            <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6 flex flex-col h-full">
               <h3 className="text-xl font-bold mb-3">Team</h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 leading-relaxed">
                 Meet the people behind the lab, including faculty, students, and
                 collaborators.
               </p>
               <Link
                 href="/team"
-                className="text-purdue-rush font-medium hover:underline"
+                 className="mt-auto pt-4 text-lab-sage hover:text-ndsu-gold font-medium transition-colors"
               >
                 Meet the Team
               </Link>

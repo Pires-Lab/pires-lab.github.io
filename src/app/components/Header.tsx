@@ -8,7 +8,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#042117]/80 backdrop-blur-md text-white py-3 border-b border-purdue-gold/60">
+    <header className="bg-[#042117]/80 backdrop-blur-md text-white py-3 border-b border-ndsu-gold/60">
       <div className="container-custom">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -28,30 +28,30 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 font-heading">
-            <Link href="/" className="hover:text-purdue-gold transition-colors">
+            <Link href="/" className="hover:text-ndsu-gold transition-colors">
               Home
             </Link>
             <Link
               href="/research"
-              className="hover:text-purdue-gold transition-colors"
+              className="hover:text-ndsu-gold transition-colors"
             >
               Research
             </Link>
             <Link
               href="/projects"
-              className="hover:text-purdue-gold transition-colors"
+              className="hover:text-ndsu-gold transition-colors"
             >
               Projects
             </Link>
             <Link
               href="/team"
-              className="hover:text-purdue-gold transition-colors"
+              className="hover:text-ndsu-gold transition-colors"
             >
               Team
             </Link>
             <Link
               href="/about"
-              className="hover:text-purdue-gold transition-colors"
+              className="hover:text-ndsu-gold transition-colors"
             >
               About
             </Link>
@@ -101,35 +101,35 @@ export default function Header() {
           <nav className="md:hidden mt-4 space-y-3 pb-3 font-heading">
             <Link
               href="/"
-              className="block hover:text-purdue-gold transition-colors"
+              className="block hover:text-ndsu-gold transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/research"
-              className="block hover:text-purdue-gold transition-colors"
+              className="block hover:text-ndsu-gold transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Research
             </Link>
             <Link
               href="/projects"
-              className="block hover:text-purdue-gold transition-colors"
+              className="block hover:text-ndsu-gold transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Projects
             </Link>
             <Link
               href="/team"
-              className="block hover:text-purdue-gold transition-colors"
+              className="block hover:text-ndsu-gold transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Team
             </Link>
             <Link
               href="/about"
-              className="block hover:text-purdue-gold transition-colors"
+              className="block hover:text-ndsu-gold transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               About

@@ -26,8 +26,8 @@ export default function Research() {
             Research Areas
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-purdue-black">
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush flex flex-col">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-lab-deep">
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-ndsu-sage flex flex-col">
               <h3 className="text-xl font-bold mb-4 min-h-[3.5rem]">
                 Soil Health
               </h3>
@@ -40,7 +40,7 @@ export default function Research() {
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush flex flex-col">
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-ndsu-sage flex flex-col">
               <h3 className="text-xl font-bold mb-4 min-h-[3.5rem]">
                 Cover Crops
               </h3>
@@ -53,7 +53,7 @@ export default function Research() {
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush flex flex-col">
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-ndsu-sage flex flex-col">
               <h3 className="text-xl font-bold mb-4 min-h-[3.5rem]">
                 Nutrient Cycling and Cropping Systems
               </h3>
@@ -84,7 +84,7 @@ export default function Research() {
         <div id="publications" className="scroll-mt-16">
           <h2 className="text-3xl font-bold mb-10 text-white">Publications</h2>
 
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-purdue-black">
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-lab-deep">
             <h3 className="text-2xl font-bold mb-3">Publications coming soon</h3>
             <p className="text-gray-700 leading-relaxed">
               We are currently updating this page with publications from the

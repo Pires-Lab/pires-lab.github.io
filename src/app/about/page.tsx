@@ -48,8 +48,8 @@ export default function About() {
             Research Focus Areas
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-purdue-black">
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-lab-deep">
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-ndsu-sage">
               <h3 className="text-xl font-bold mb-4">Soil Health</h3>
               <p className="text-gray-700 leading-relaxed">
                 We study how agricultural management affects soil biological,
@@ -58,7 +58,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush">
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-ndsu-sage">
               <h3 className="text-xl font-bold mb-4">Cover Crops</h3>
               <p className="text-gray-700 leading-relaxed">
                 Our research evaluates cover crop establishment, performance,
@@ -67,7 +67,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush">
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-ndsu-sage">
               <h3 className="text-xl font-bold mb-4">Cropping Systems</h3>
               <p className="text-gray-700 leading-relaxed">
                 We investigate management strategies that support resilient and
