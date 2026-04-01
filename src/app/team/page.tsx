@@ -74,9 +74,7 @@ const alumniTeam = teamData.filter((member) => {
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold mb-4 text-white">Our Team</h1>
           <p className="text-lg text-white/90 max-w-3xl mx-auto">
-            Meet the researchers, students, and collaborators working in the
-            Pires Lab on soil health, cover crops, nutrient cycling, and
-            sustainable cropping systems.
+            Meet the researchers, students, and collaborators working in the Pires Lab.
           </p>
         </div>
 
