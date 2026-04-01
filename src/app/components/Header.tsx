@@ -8,30 +8,26 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#042117]/80 backdrop-blur-md text-white py-4 border-b border-purdue-gold/60">
+    <header className="bg-[#042117]/80 backdrop-blur-md text-white py-3 border-b border-purdue-gold/60">
       <div className="container-custom">
         <div className="flex items-center justify-between">
-          {/* Logo and Lab Name */}
-          <div className="flex items-center space-x-3">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="relative flex items-center justify-center h-10 w-10 md:h-12 md:w-12">
+          {/* Logo */}
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center">
+              <div className="relative h-[72px] w-[300px] md:h-[78px] md:w-[320px] lg:h-[84px] lg:w-[340px]">
                 <Image
-                  src="/lab-logo.png"
+                  src="/lab-logo-horizontal.png"
                   alt="Pires Lab Logo"
-                  width={48}
-                  height={48}
-                  className="w-10 h-10 md:w-12 md:h-12 object-contain"
+                  fill
+                  className="object-contain"
                   priority
                 />
               </div>
-              <h1 className="text-purdue-white text-xl md:text-2xl">
-                Pires Lab
-              </h1>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 font-heading">
+          <nav className="hidden md:flex items-center space-x-6 font-heading">
             <Link href="/" className="hover:text-purdue-gold transition-colors">
               Home
             </Link>
