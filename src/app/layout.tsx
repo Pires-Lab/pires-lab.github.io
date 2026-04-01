@@ -11,6 +11,7 @@ const manrope = Manrope({
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
+
 const lora = Lora({
   subsets: ["latin"],
   variable: "--font-lora",
@@ -20,24 +21,21 @@ const lora = Lora({
 
 /* ---------- site-wide <head> metadata ---------- */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ciampitti-lab.github.io"),
+  metadataBase: new URL("https://pires-lab.github.io"),
   title: "Pires Lab",
   description:
     "Seeking answers. Developing solutions. | Soil Health • Cover Crops • Applied Research",
 
-  /* ---- FAVICON: stable URL, no hash ---- */
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png", sizes: "512x512" },
-      // optional legacy fallback for old browsers
       { url: "/favicon.ico" },
     ],
   },
 
-  /* ---- Open Graph / Twitter ---- */
   openGraph: {
     type: "website",
-    url: "https://ciampitti-lab.github.io/",
+    url: "https://pires-lab.github.io/",
     siteName: "Pires Lab",
     title: "Pires Lab",
     description:
@@ -51,15 +49,19 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    site: "@CiampittiLab",
-    creator: "@pcisdeli",
     images: ["/lab-logo.png"],
   },
 
-  robots: { "max-image-preview": "large" },
-  verification: { google: "ypOgEpElFzU7fdEsaDRwEZNOyfmk0KhY06Gl5FsUhbg" },
+  robots: {
+    "max-image-preview": "large",
+  },
+
+  verification: {
+    google: "ypOgEpElFzU7fdEsaDRwEZNOyfmk0KhY06Gl5FsUhbg",
+  },
 };
 
 export default function RootLayout({
@@ -70,7 +72,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ---- Structured-data ---- */}
         <Script
           id="website-ld-json"
           type="application/ld+json"
@@ -79,10 +80,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              url: "https://ciampitti-lab.github.io/",
+              url: "https://pires-lab.github.io/",
               name: "Pires Lab",
-              alternateName: "Ciampitti-Lab",
-              logo: "https://ciampitti-lab.github.io/favicon.png",
+              alternateName: "Pires Lab",
+              logo: "https://pires-lab.github.io/favicon.png",
             }),
           }}
         />
