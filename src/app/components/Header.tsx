@@ -8,7 +8,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-purdue-black text-white py-4 border-double border-b-2 border-purdue-gold">
+    <header className="bg-[#042117]/80 backdrop-blur-md text-white py-4 border-b border-purdue-gold/60">
       <div className="container-custom">
         <div className="flex items-center justify-between">
           {/* Logo and Lab Name */}
@@ -51,13 +51,7 @@ export default function Header() {
               href="/team"
               className="hover:text-purdue-gold transition-colors"
             >
-              Team Members
-            </Link>
-            <Link
-              href="/news"
-              className="hover:text-purdue-gold transition-colors"
-            >
-              News & Blog
+              Team
             </Link>
             <Link
               href="/about"
@@ -112,36 +106,35 @@ export default function Header() {
             <Link
               href="/"
               className="block hover:text-purdue-gold transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/research"
               className="block hover:text-purdue-gold transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Research
             </Link>
             <Link
               href="/projects"
               className="block hover:text-purdue-gold transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Projects
             </Link>
             <Link
-              href="/news"
-              className="block hover:text-purdue-gold transition-colors"
-            >
-              News & Blog
-            </Link>
-            <Link
               href="/team"
               className="block hover:text-purdue-gold transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
-              Team Members
+              Team
             </Link>
             <Link
               href="/about"
               className="block hover:text-purdue-gold transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               About
             </Link>

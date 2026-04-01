@@ -35,6 +35,7 @@ interface TeamMember {
   pfp_file_name: string;
   linkedin: string;
   research_info: string;
+  group?: string;
 }
 
 // Interface for news post data

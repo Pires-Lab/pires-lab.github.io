@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Plus_Jakarta_Sans, Lora } from "next/font/google";
+import { Manrope, Lora } from "next/font/google";
 import "./globals.css";
 import ConditionalLayout from "./components/ConditionalLayout";
 
 /* ---------- local fonts ---------- */
-const plusJakartaSans = Plus_Jakarta_Sans({
+const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-plus-jakarta",
   weight: ["400", "500", "600", "700", "800"],
@@ -89,7 +89,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${plusJakartaSans.variable} ${lora.variable} antialiased min-h-screen flex flex-col`}
+        className={`${manrope.variable} ${lora.variable} antialiased min-h-screen flex flex-col`}
       >
         <ConditionalLayout>{children}</ConditionalLayout>
       </body>

@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { pubData } from "@/lib/info_helper.server";
-import PaginatedPublications from "@/app/components/PaginatedPublications";
 
 export const metadata = {
-  title: "Pires Lab - Publications",
+  title: "Pires Lab - Research",
   description:
-    "Latest research publications from the Pires Lab at Purdue University.",
+    "Research areas and publications from the Pires Lab focused on soil health, cover crops, and sustainable cropping systems.",
 };
 
 export default function Research() {
@@ -14,97 +12,84 @@ export default function Research() {
       <div className="container-custom">
         {/* Page Header */}
         <div className="mb-16 text-center">
-          <h1 className="text-4xl font-bold mb-4">Our Research</h1>
-          <p className="text-lg text-purdue-secondary-gray4 max-w-3xl mx-auto">
-            Exploring the intersection of digital technology and agricultural
-            science to develop innovative solutions for sustainable crop
-            production.
+          <h1 className="text-4xl font-bold mb-4 text-white">Our Research</h1>
+          <p className="text-lg text-white/95 max-w-3xl mx-auto">
+            Our research focuses on soil health, cover crops, nutrient cycling,
+            residue management, and resilient cropping systems that support
+            sustainable agriculture.
           </p>
         </div>
 
         {/* Research Areas Overview */}
         <div className="mb-24">
-          <h2 className="text-3xl font-bold mb-10 text-center">
+          <h2 className="text-3xl font-bold mb-10 text-center text-white">
             Research Areas
           </h2>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-purdue-black">
-            {/* Data Analysis */}
             <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush flex flex-col">
               <h3 className="text-xl font-bold mb-4 min-h-[3.5rem]">
-                Agricultural Data Analysis
+                Soil Health
               </h3>
               <div className="flex-grow">
-                <p className="text-gray-600">
-                  Leveraging big data approaches to analyze field performance
-                  data, weather patterns, and crop responses to various
-                  management practices. We develop predictive models and
-                  decision support tools to help optimize agricultural
-                  operations.
+                <p className="text-gray-700">
+                  We study how agricultural management influences soil
+                  biological, chemical, and physical properties related to
+                  productivity, resilience, and long-term sustainability.
                 </p>
               </div>
             </div>
-            {/* Farming Systems */}
+
             <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush flex flex-col">
               <h3 className="text-xl font-bold mb-4 min-h-[3.5rem]">
-                Crop Management Systems
+                Cover Crops
               </h3>
               <div className="flex-grow">
-                <p className="text-gray-600">
-                  Investigating innovative crop management strategies that
-                  enhance yield, quality, and sustainability. Our research
-                  focuses on optimizing inputs and management practices through
-                  a combination of traditional field research and digital
-                  agriculture approaches.
+                <p className="text-gray-700">
+                  Our work evaluates cover crop establishment, biomass
+                  production, weed suppression, soil protection, and their role
+                  in improving system performance.
                 </p>
               </div>
             </div>
-            {/* Computer Vision */}
+
             <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush flex flex-col">
               <h3 className="text-xl font-bold mb-4 min-h-[3.5rem]">
-                Computer Vision in Agriculture
+                Nutrient Cycling and Cropping Systems
               </h3>
               <div className="flex-grow">
-                <p className="text-gray-600">
-                  Using image recognition and processing techniques to monitor
-                  crop health, detect diseases, and measure plant growth
-                  parameters. Our computer vision research aims to automate the
-                  collection of plant phenotypic data and enable early detection
-                  of stress conditions.
+                <p className="text-gray-700">
+                  We investigate nutrient dynamics, residue management, and
+                  management strategies that support efficient and resilient
+                  cropping systems under field conditions.
                 </p>
               </div>
             </div>
           </div>
         </div>
+
         {/* Collaboration CTA */}
-        <div className="bg-purdue-black text-white p-8 md:p-12 rounded-xl text-center">
+        <div className="bg-[#041a12]/85 backdrop-blur-sm text-white p-8 md:p-12 rounded-xl text-center border border-[#7fa66a]/40 mb-16">
           <h2 className="text-3xl font-bold mb-4">Research Collaboration</h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-            Interested in collaborating on research projects or learning more
-            about our work? We welcome partnerships with academic institutions,
-            industry, and government agencies.
+            We welcome collaboration with students, researchers, and partners
+            interested in soil health, cover crops, and sustainable agriculture.
           </p>
-          <Link
-            href="https://www.linkedin.com/company/ciampitti-lab/"
-            target="_blank"
-            className="btn-primary"
-          >
-            Contact us via LinkedIn
+          <Link href="/team" className="btn-primary">
+            Meet Our Team
           </Link>
         </div>
+
         {/* Publications */}
-        <div id="publications" className="mt-16 scroll-mt-16">
-          <h2 className="text-3xl font-bold mb-10">Publications</h2>
+        <div id="publications" className="scroll-mt-16">
+          <h2 className="text-3xl font-bold mb-10 text-white">Publications</h2>
 
-          <PaginatedPublications publications={pubData} itemsPerPage={10} />
-
-          <div className="mt-8 text-center">
-            <a
-              href="https://scholar.google.com/citations?user=jnMR6RUAAAAJ&hl=en"
-              target="_blank"
-              className="btn-secondary bg-white text-purdue-black"
-            >
-              View All Publications on Google Scholar
-            </a>
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-purdue-black">
+            <h3 className="text-2xl font-bold mb-3">Publications coming soon</h3>
+            <p className="text-gray-700 leading-relaxed">
+              We are currently updating this page with publications from the
+              Pires Lab. Please check back soon.
+            </p>
           </div>
         </div>
       </div>

@@ -1,10 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
-import FacilityCarousel from "@/app/components/FacilityCarousel";
 
 export const metadata = {
   title: "Pires Lab - About",
-  description: "Mission, research focus and facilities of the Pires Lab.",
+  description:
+    "Mission and research focus of the Pires Lab.",
 };
 
 export default function About() {
@@ -13,249 +12,83 @@ export default function About() {
       <div className="container-custom">
         {/* Page Header */}
         <div className="mb-16 text-center">
-          <h1 className="text-4xl font-bold mb-4">About Our Lab</h1>
-          <p className="text-lg text-purdue-secondary-gray4 max-w-3xl mx-auto">
-            The Pires Lab focuses on digital agriculture research, combining
-            computer vision, data analysis, and traditional crop management
-            systems to advance sustainable agriculture.
+          <h1 className="text-4xl font-bold mb-4 text-white">About Our Lab</h1>
+          <p className="text-lg text-white/90 max-w-3xl mx-auto">
+            The Pires Lab studies soil health, cover crops, nutrient cycling,
+            and resilient cropping systems to support more sustainable
+            agriculture.
           </p>
         </div>
 
         {/* Mission Section */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
-          <div>
-            <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-            <p className="text-purdue-secondary-gray4 text-md mb-4">
-              At the Pires Lab, our mission is to develop innovative digital
-              agriculture solutions that enable more efficient, sustainable, and
-              productive farming practices. We leverage cutting-edge
-              technologies in computer vision, machine learning, and data
-              analytics, while maintaining a strong foundation in traditional
-              crop science and management systems.
-            </p>
-            <p className="text-purdue-secondary-gray4 text-md mb-4">
-              Our interdisciplinary approach brings together experts from
-              agronomy, computer science, engineering, and data science to
-              address complex challenges in modern agriculture. Through
-              collaborative research and engagement with industry partners, we
-              aim to bridge the gap between academic innovation and practical
-              applications in the field.
-            </p>
-            <p className="text-purdue-secondary-gray4 text-md">
-              We are committed to training the next generation of agricultural
-              scientists and technologists through our educational programs and
-              research opportunities for students at all levels.
-            </p>
-          </div>
-          <div className="bg-purdue-black rounded-lg h-full flex items-center justify-center border-4 border-double border-purdue-gold">
-            <Image
-              src="/about/jacket.jpg"
-              alt="Lab Mission"
-              width={500}
-              height={500}
-              className="w-full h-full object-cover rounded-lg opacity-70"
-            />
-          </div>
+        <div className="mb-20 max-w-4xl">
+          <h2 className="text-3xl font-bold mb-6 text-white">Our Mission</h2>
+          <p className="text-white/90 text-lg mb-4 leading-relaxed">
+            Our mission is to advance agricultural sustainability through
+            research that improves soil function, crop performance, and system
+            resilience. We are interested in how management practices influence
+            soil health and long-term productivity across cropping systems.
+          </p>
+          <p className="text-white/90 text-lg mb-4 leading-relaxed">
+            Our work integrates field research, data analysis, and applied
+            agronomy to better understand nutrient dynamics, residue
+            management, cover crop performance, and the biological and physical
+            processes that drive healthy soils.
+          </p>
+          <p className="text-white/90 text-lg leading-relaxed">
+            We are also committed to training students and building research
+            that is useful to farmers, researchers, and agricultural
+            professionals.
+          </p>
         </div>
 
         {/* Research Focus Areas */}
-        <div className="mb-24">
-          <h2 className="text-3xl font-bold mb-10 text-center">
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold mb-10 text-center text-white">
             Research Focus Areas
           </h2>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-purdue-black">
-            {/* Data Analysis */}
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush flex flex-col">
-              <h3 className="text-xl font-bold mb-4 min-h-[3.5rem]">
-                Agricultural Data Analysis
-              </h3>
-              <div className="flex-grow">
-                <p className="text-gray-600">
-                  Leveraging big data approaches to analyze field performance
-                  data, weather patterns, and crop responses to various
-                  management practices. We develop predictive models and
-                  decision support tools to help optimize agricultural
-                  operations.
-                </p>
-              </div>
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush">
+              <h3 className="text-xl font-bold mb-4">Soil Health</h3>
+              <p className="text-gray-700 leading-relaxed">
+                We study how agricultural management affects soil biological,
+                chemical, and physical properties linked to productivity and
+                sustainability.
+              </p>
             </div>
-            {/* Farming Systems */}
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush flex flex-col">
-              <h3 className="text-xl font-bold mb-4 min-h-[3.5rem]">
-                Crop Management Systems
-              </h3>
-              <div className="flex-grow">
-                <p className="text-gray-600">
-                  Investigating innovative crop management strategies that
-                  enhance yield, quality, and sustainability. Our research
-                  focuses on optimizing inputs and management practices through
-                  a combination of traditional field research and digital
-                  agriculture approaches.
-                </p>
-              </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush">
+              <h3 className="text-xl font-bold mb-4">Cover Crops</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Our research evaluates cover crop establishment, performance,
+                and their role in improving soil protection, nutrient cycling,
+                and system resilience.
+              </p>
             </div>
-            {/* Computer Vision */}
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush flex flex-col">
-              <h3 className="text-xl font-bold mb-4 min-h-[3.5rem]">
-                Computer Vision in Agriculture
-              </h3>
-              <div className="flex-grow">
-                <p className="text-gray-600">
-                  Using image recognition and processing techniques to monitor
-                  crop health, detect diseases, and measure plant growth
-                  parameters. Our computer vision research aims to automate the
-                  collection of plant phenotypic data and enable early detection
-                  of stress conditions.
-                </p>
-              </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-purdue-rush">
+              <h3 className="text-xl font-bold mb-4">Cropping Systems</h3>
+              <p className="text-gray-700 leading-relaxed">
+                We investigate management strategies that support resilient and
+                efficient cropping systems under real field conditions.
+              </p>
             </div>
           </div>
         </div>
-
-        {/* Lab Facilities */}
-        <div className="mb-24">
-          <h2 className="text-3xl font-bold mb-10 text-center">
-            Our Facilities
-          </h2>
-          <div className="bg-purdue-black rounded-lg p-8">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Research Facilities</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <div className="h-6 w-6 rounded-full bg-purdue-gold flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 text-black"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                    </div>
-                    <p>
-                      Field research hub with four core facilities: dry lab, wet
-                      lab, hybrid lab, and field barn.
-                    </p>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="h-6 w-6 rounded-full bg-purdue-gold flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 text-black"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                    </div>
-                    <p>
-                      Advanced imaging systems including RGB, multispectral, and
-                      depth cameras.
-                    </p>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="h-6 w-6 rounded-full bg-purdue-gold flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 text-black"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                    </div>
-                    <p>
-                      Computational resources for training machine learning
-                      models, data processing and analysis.
-                    </p>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="h-6 w-6 rounded-full bg-purdue-gold flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 text-black"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                    </div>
-                    <p>
-                      Greenhouse facilities for controlled environment studies.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div className="rounded-lg">
-                <FacilityCarousel />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Collaborations */}
-        {
-          // <div className="mb-24">
-          //   <h2 className="text-3xl font-bold mb-6 text-center">
-          //     Our Collaborators
-          //   </h2>
-          //   <p className="text-center text-white max-w-3xl mx-auto mb-10">
-          //     We collaborate with academic institutions, industry partners, and
-          //     government agencies to drive innovation and translate research
-          //     into practical applications.
-          //   </p>
-          //
-          //   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-          //     {/* Placeholder logos - replace with actual collaborator logos */}
-          //     {[1, 2, 3, 4, 5].map((i) => (
-          //       <div
-          //         key={i}
-          //         className="h-24 bg-white rounded-lg shadow-sm border border-gray-100 flex items-center justify-center"
-          //       >
-          //         <p className="text-gray-400">Partner {i}</p>
-          //       </div>
-          //     ))}
-          //   </div>
-          // </div>
-        }
 
         {/* Contact CTA */}
-        <div className="bg-purdue-black text-white p-8 md:p-12 rounded-xl text-center">
+        <div className="bg-[#041a12]/85 backdrop-blur-sm text-white p-8 md:p-12 rounded-xl text-center border border-[#7fa66a]/40">
           <h2 className="text-3xl font-bold mb-4">
             Interested in Collaborating?
           </h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-            We&apos;re always open to new research collaborations, industry
-            partnerships, and student opportunities. Get in touch to discuss how
-            we can work together.
+            We welcome research collaborations, student interest, and
+            opportunities to connect with others working in soil health and
+            sustainable agriculture.
           </p>
           <Link href="/team" className="btn-primary">
-            Contact us via LinkedIn
+            Meet the Team
           </Link>
         </div>
       </div>

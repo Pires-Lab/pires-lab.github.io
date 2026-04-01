@@ -5,7 +5,7 @@ import { newsData } from "@/lib/info_helper.server";
 export const metadata = {
   title: "Pires Lab - News",
   description:
-    "Latest updates, blog posts and events from the Pires Lab at Purdue University.",
+    "Latest updates, blog posts and events from the Pires Lab at North Dakota State University.",
 };
 
 export default function News() {

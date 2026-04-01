@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
+  --background: #050505;
   --foreground: #ededed;
+  --ndsu-green: #00583d;
+  --ndsu-gold: #ffc425;
+  --ndsu-sage: #d7e5c8;
+  --ndsu-field: #a0bd78;
+  --soil-dark: #06110d;
 }
 
 @theme inline {
@@ -14,11 +19,23 @@
   --font-body: var(--font-lora);
 }
 
+html {
+  background-color: var(--background);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
   min-height: 100vh;
+  color: var(--foreground);
   font-family: var(--font-lora), serif;
+  background-color: var(--background);
+  background-image:
+    radial-gradient(circle at 18% 18%, rgba(0, 88, 61, 0.34) 0, transparent 30%),
+    radial-gradient(circle at 82% 14%, rgba(255, 196, 37, 0.10) 0, transparent 24%),
+    radial-gradient(circle at 50% 55%, rgba(0, 88, 61, 0.14) 0, transparent 34%),
+    radial-gradient(circle at 50% 82%, rgba(0, 88, 61, 0.10) 0, transparent 28%),
+    radial-gradient(circle at 52% 100%, rgba(160, 189, 120, 0.08) 0, transparent 24%),
+    linear-gradient(180deg, #03110c 0%, #041a12 28%, #04130e 58%, #030303 100%);
+  background-attachment: fixed;
 }
 
 h1,
@@ -36,10 +53,22 @@ h6 {
   }
 
   .btn-primary {
-    @apply bg-purdue-gold text-purdue-black px-4 py-2 rounded hover:opacity-90 transition-opacity font-heading font-medium;
-  }
+  @apply px-4 py-2 rounded transition-opacity font-heading font-medium;
+  background-color: #a0bd78;
+  color: #0b1a13;
+}
 
-  .btn-secondary {
-    @apply bg-purdue-black text-white px-4 py-2 rounded hover:opacity-90 transition-opacity font-heading font-medium;
-  }
+.btn-primary:hover {
+  opacity: 0.92;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 rounded transition-opacity font-heading font-medium text-white;
+  background-color: rgba(4, 26, 18, 0.85);
+  border: 1px solid rgba(127, 166, 106, 0.4);
+}
+
+.btn-secondary:hover {
+  opacity: 0.92;
+}
 }
