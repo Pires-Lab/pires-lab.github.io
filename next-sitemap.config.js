@@ -1,8 +1,9 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://pires-lab.github.io",
+  siteUrl: "https://pires-lab.github.io/",
   generateRobotsTxt: true,
-  generateIndexSitemap: false,
-  trailingSlash: false,
+  generateIndexSitemap: true,
+  output: "export",
+  trailingSlash: true,
   outDir: "./out",
 };
