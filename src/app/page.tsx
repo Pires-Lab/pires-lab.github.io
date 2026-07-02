@@ -22,7 +22,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-5xl leading-tight text-white">
                 <span className="text-[#c8dd9b] font-bold">Soil Health</span>{" "}
                 and{" "}
-                <span className="text-[#c8dd9b] font-bold">Cover Crops</span>{" "}
+                <span className="text-[#c8dd9b] font-bold">Cover Crop</span>{" "}
                 Research
               </h2>
 
