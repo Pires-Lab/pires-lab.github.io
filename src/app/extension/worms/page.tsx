@@ -1,15 +1,20 @@
 import DemoTemplate from "../../components/DemoTemplate";
 
 export default function WormsPage() {
+  // 1. Criamos a mídia no novo formato que o DemoTemplate exige
+  const media = [
+    { type: "image" as const, src: "/demos/worms.jpg", alt: "Earthworm Activity in Soil" }
+  ];
+
   return (
     <DemoTemplate
       title="Earthworm Activity"
-      imageSrc="/demos/worms.jpg"
-      backLink="/extension/gallery" // O caminho da sua página principal
-      backText="Back to Soil Health Express"    // O texto que vai aparecer
+      gallery={media} // 2. Usamos a nova propriedade 'gallery' aqui!
+      backLink="/extension/gallery"
+      backText="Back to Soil Health Express"
     >
       <p>
-        Earthworms are the quintessential "engineers" of the soil ecosystem. Our terrarium demonstration offers a cross-sectional view of earthworm activity, highlighting their crucial role in breaking down organic matter and structuring the soil.
+        Earthworms are the quintessential engineers of the soil ecosystem. Our terrarium demonstration offers a cross-sectional view of earthworm activity, highlighting their crucial role in breaking down organic matter and structuring the soil.
       </p>
       <h3 className="text-2xl font-bold mt-8 mb-4">Key Takeaways</h3>
       <ul className="list-disc pl-6 space-y-2">

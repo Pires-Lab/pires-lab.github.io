@@ -16,7 +16,7 @@ export default function PhysicalIndicatorsPage() {
       ctaLink="/extension/edumaterials"
     >
       <p>
-        Physical indicators provide a snapshot of the soil's structure and its ability to function as a medium for water and air movement. 
+        Physical indicators provide a snapshot of the {'soil\'s'} structure and its ability to function as a medium for water and air movement. 
         Healthy physical soil structure is the foundation that allows roots to grow and water to infiltrate efficiently.
       </p>
 

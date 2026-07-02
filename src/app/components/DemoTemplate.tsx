@@ -1,5 +1,6 @@
 // src/app/components/DemoTemplate.tsx
-"use client"; // Necessário pois usamos estados para o Lightbox
+"use client"; 
+
 import { useState } from "react";
 import Link from "next/link";
 import Lightbox from "yet-another-react-lightbox";
@@ -28,10 +29,10 @@ export default function DemoTemplate({
 }: DemoTemplateProps) {
   const [index, setIndex] = useState(-1);
 
-  // Filtramos apenas as imagens para o Lightbox, pois vídeos são tratados pelo iframe
-  const lightboxSlides = gallery
-    .filter(item => item.type === "image")
-    .map(item => ({ src: item.src }));
+  // Preparamos os slides para o Lightbox uma única vez
+  const slides = gallery
+    .filter((item) => item.type === "image")
+    .map((item) => ({ src: item.src }));
 
   return (
     <div className="py-16 bg-white min-h-screen">
@@ -54,7 +55,7 @@ export default function DemoTemplate({
                 <div 
                   key={idx} 
                   className="overflow-hidden rounded-xl shadow-md bg-gray-100 aspect-video relative border border-gray-200 cursor-pointer"
-                  onClick={() => item.type === "image" && setIndex(gallery.findIndex(i => i.src === item.src))}
+                  onClick={() => item.type === "image" && setIndex(slides.findIndex((s) => s.src === item.src))}
                 >
                   {item.type === "image" ? (
                     <img src={item.src} alt={item.alt || ""} className="w-full h-full object-cover hover:opacity-90 transition-opacity" />
@@ -67,12 +68,11 @@ export default function DemoTemplate({
           </div>
         )}
 
-        {/* Lightbox para as imagens */}
         <Lightbox
           open={index >= 0}
           index={index}
           close={() => setIndex(-1)}
-          slides={gallery.filter(i => i.type === "image").map(i => ({ src: i.src }))}
+          slides={slides}
         />
 
         {ctaText && ctaLink && (

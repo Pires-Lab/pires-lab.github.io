@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://pires-lab.github.io
+Host: https://pires-lab.github.io/
 
 # Sitemaps
 Sitemap: https://pires-lab.github.io/sitemap.xml

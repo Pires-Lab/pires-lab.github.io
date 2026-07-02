@@ -15,14 +15,14 @@ export default function ChemicalIndicatorsPage() {
       ctaLink="/extension/edumaterials"
     >
       <p>
-        Chemical indicators reflect the soil's nutrient status and its ability to provide the essential environment for plant growth. 
+        Chemical indicators reflect the {'soil\'s'} nutrient status and its ability to provide the essential environment for plant growth. 
         These metrics are critical for optimizing fertilizer use and maintaining long-term land productivity.
       </p>
 
       <h3 className="text-2xl font-bold mt-8 mb-4">Core Chemical Metrics</h3>
       <ul className="list-disc pl-6 space-y-2">
         <li><strong>Soil pH:</strong> The master variable that influences nutrient solubility and microbial activity.</li>
-        <li><strong>Cation Exchange Capacity (CEC):</strong> An indicator of the soil's potential to hold and supply nutrients.</li>
+        <li><strong>Cation Exchange Capacity (CEC):</strong> An indicator of the {'soil\'s'} potential to hold and supply nutrients.</li>
         <li><strong>Organic Matter Content:</strong> The primary reservoir for nitrogen, phosphorus, and sulfur.</li>
       </ul>
 

@@ -2,7 +2,21 @@
 
 import { useState } from "react";
 
-export default function CoverCropsClient({ coverCropsData }: { coverCropsData: any[] }) {
+// 1. Definimos a estrutura exata dos dados da planta para o TypeScript
+interface CoverCrop {
+  id: string;
+  name: string;
+  scientificName: string;
+  type: string;
+  growthHabit: string;
+  description: string[];
+  benefits: string[];
+  planting: Record<string, string | number>;
+  stress: Record<string, string | number>;
+}
+
+// 2. Trocamos o unknown[] por CoverCrop[]
+export default function CoverCropsClient({ coverCropsData }: { coverCropsData: CoverCrop[] }) {
   const [selectedCropId, setSelectedCropId] = useState(coverCropsData[0]?.id);
   const [activeTab, setActiveTab] = useState("planting");
 
