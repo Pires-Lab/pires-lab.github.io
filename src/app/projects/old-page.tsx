@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { projects } from "./data";
 
+// old projects page. Deactivaded, working as a backup if needed 
+
 export const metadata = {
   title: "Projects - Pires Lab",
   description:
